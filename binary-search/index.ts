@@ -19,9 +19,8 @@ const binarySearch = (totalElements: number, element: number): number | null => 
     let guess = totalArray[middle - 1]
     count++
 
-    console.log("STEPS: ", count)
-
       if(guess === element) {
+          console.log("STEPS: ", count, 'Result: ', middle)
           return middle
       }
 
@@ -37,4 +36,4 @@ const binarySearch = (totalElements: number, element: number): number | null => 
   return null
 }
 
-console.log("Result: ", binarySearch(100, 1))
+binarySearch(100, 1)
