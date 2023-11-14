@@ -8,8 +8,7 @@ const numberToArray = (number = 0) => {
   return array
 }
 
-const binarySearch = (totalElements: number, element: number): number | null => {
-  const totalArray = numberToArray(totalElements)
+const binarySearch = (totalArray: number[], element: number): number | null => {
   let lower = 0
   let higher = totalArray.length - 1
   let count = 0
@@ -36,4 +35,5 @@ const binarySearch = (totalElements: number, element: number): number | null => 
   return null
 }
 
-binarySearch(100, 1)
+const numberArray = numberToArray(24000000)
+binarySearch(numberArray, 1)
