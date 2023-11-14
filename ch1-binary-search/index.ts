@@ -1,3 +1,4 @@
+// O(n)
 const numberToArray = (number = 0) => {
   let array: number[] = []
 
@@ -8,6 +9,7 @@ const numberToArray = (number = 0) => {
   return array
 }
 
+// O(log n)
 const binarySearch = (totalArray: number[], element: number): number | null => {
   let lower = 0
   let higher = totalArray.length - 1

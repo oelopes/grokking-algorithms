@@ -1,3 +1,4 @@
+// O(n)
 const findSmallest = (arr: number[]): number => {
     let smallest = arr[0]
     let smallestIndex = 0
@@ -7,11 +8,13 @@ const findSmallest = (arr: number[]): number => {
             smallest = arr[i]
             smallestIndex = i
         }
-      }
+    }
 
-      return smallestIndex
+    return smallestIndex
 }
 
+
+// O(n^2)
 const orderBySelection = (arr: number[]): number[] => {
     const newArr: number[] = []
     const length = arr.length
